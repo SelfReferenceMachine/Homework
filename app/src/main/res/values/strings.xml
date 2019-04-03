@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Ya All Doomed</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">SNS</string>
+    <string name="nav_header_subtitle" translatable="false">953956895@qq.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Setting</string>
+    <string name="btn_label">temperature</string>
+    <string name="score_label">0</string>
+    <string name="lable_three1" translatable="false">+3 POINTS</string>
+    <string name="lable_two1" translatable="false">+2 POINTS</string>
+    <string name="lable_one1" translatable="false">+1 POINT</string>
+    <string name="rmbInput">PLEASE TYPE RMB</string>
+
+
+</resources>

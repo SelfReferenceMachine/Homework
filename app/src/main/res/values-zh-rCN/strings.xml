@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exercise</string>
+    <string name="action_settings">点我闪退</string>
+    <string name="nav_header_desc">点我闪退</string>
+    <string name="btn_label">得到温度为：</string>
+    <string name="score_label">0</string>
+    <string name="rmbInput">请输入你要转化的人民币金额</string>
+
+</resources>
