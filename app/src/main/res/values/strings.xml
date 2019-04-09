@@ -11,7 +11,12 @@
     <string name="lable_three1" translatable="false">+3 POINTS</string>
     <string name="lable_two1" translatable="false">+2 POINTS</string>
     <string name="lable_one1" translatable="false">+1 POINT</string>
-    <string name="rmbInput">PLEASE TYPE RMB</string>
+    <string name="rmbInput">Please input RMB</string>
+    <string name="btn_dollar_label" translatable="false">DOLLAR</string>
+    <string name="btn_euro_label" translatable="false">EURO</string>
+    <string name="btn_reset_label" translatable="false">Reset</string>
+    <string name="btn_yen_label" translatable="false">YEN</string>
+    <string name="btn_user_define" translatable="false">User Define</string>
 
 
 </resources>
