@@ -1,5 +1,6 @@
 package com.lofter.nonalaberin_rosettastone.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -40,6 +41,10 @@ public class exchange extends AppCompatActivity {
             val = r * 16.5f;
             result.setText(String.valueOf(val));
         }
+    }
 
+    public void openOne(View btn) {
+        Intent define = new Intent(this,UserDefine.class);
+        startActivity(define);
     }
 }

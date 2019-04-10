@@ -14,7 +14,6 @@
     <string name="rmbInput">Please input RMB</string>
     <string name="btn_dollar_label" translatable="false">DOLLAR</string>
     <string name="btn_euro_label" translatable="false">EURO</string>
-    <string name="btn_reset_label" translatable="false">Reset</string>
     <string name="btn_yen_label" translatable="false">YEN</string>
     <string name="btn_user_define" translatable="false">User Define</string>
 
