@@ -1,43 +1,87 @@
 package com.lofter.nonalaberin_rosettastone.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class score extends AppCompatActivity {
-    TextView score;
-    TextView score2;
 
-    protected void onCreat(Bundle saveInstanceState){
-        super.onCreate(saveInstanceState);
+    TextView show,showb;
+
+    protected void onCreate(Bundle saveInstanceState){
+       super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_score);
-        score2 = (TextView)findViewById(R.id.score1);
-
+        show = findViewById(R.id.score);
+        showb = findViewById(R.id.score2);
     }
 
-    public void btnOne1(View one1){
-        showScore(1);
-    }
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        String scorea = ((TextView)findViewById(R.id.score)).getText().toString();
+        String scoreb = ((TextView)findViewById(R.id.score2)).getText().toString();
 
-    public void btnTwo1(View two1){
-        showScore(2);
+        outState.putString("teama_score",scorea);
+        outState.putString("teamb_score",scoreb);
     }
-
-    public void btnThree1(View three1){
-        showScore(3);
-    }
-
-    private void showScore(int inc){
-        String oldScore = (String)score2.getText();
-        int newScore2 = Integer.parseInt(oldScore)+ inc;
-        score2.setText("" + newScore2);
-    }
+    //保留旋转时会丢失的数据
 
     @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String scorea = savedInstanceState.getString("teama_score");
+        String scoreb = savedInstanceState.getString("teamb_score");
+
+        ((TextView)findViewById(R.id.score)).setText(scorea);
+        ((TextView)findViewById(R.id.score2)).setText(scoreb);
+    }
+    //还原保存的数据
+
+
+    public void btn1(View v){
+        if (v.getId()==R.id.btn1){
+            show(1);
+        }else if(v.getId()==R.id.btn1b){
+            showb(1);
+        }
+    }
+
+    public void btn2(View v){
+        if (v.getId()==R.id.btn2){
+            show(2);
+        }else if(v.getId()==R.id.btn2b){
+            showb(2);
+        }
+    }
+
+    public void btn3(View v){
+        if (v.getId()==R.id.btn3){
+            show(3);
+        }else if(v.getId()==R.id.btn3b){
+            showb(3);
+        }
+    }
+
+    public void btnReset(View v){
+        TextView out = (TextView)findViewById(R.id.score);
+        out.setText("0");
+        ((TextView)findViewById(R.id.score2)).setText("0");
+    }
+
+    private void show(int inc){
+        String oldScore = (String)show.getText();
+        String newScore = String.valueOf(Integer.parseInt(oldScore)+ inc);
+        show.setText(newScore);
+    }
+
+    private void showb(int inc){
+        String oldScore = (String)showb.getText();
+        String newScore = String.valueOf(Integer.parseInt(oldScore)+ inc);
+        showb.setText(newScore);
+    }
+
+
+    /*@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
@@ -88,7 +132,7 @@ public class score extends AppCompatActivity {
             }
 
         });
-    }
+    }*/
 
 
 }

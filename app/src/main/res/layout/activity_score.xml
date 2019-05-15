@@ -47,26 +47,29 @@
                 android:textSize="38sp" />
 
             <Button
-                android:id="@+id/three"
+                android:id="@+id/btn3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:gravity="center"
+                android:onClick="btn3"
                 android:text="+3 POINTS"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/two"
+                android:id="@+id/btn2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:onClick="btn2"
                 android:text="+2 POINTS"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/one"
+                android:id="@+id/btn1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="btn1"
                 android:text="+1 POINT"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -98,7 +101,7 @@
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/score1"
+                android:id="@+id/score2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
@@ -107,29 +110,29 @@
                 android:textSize="38sp" />
 
             <Button
-                android:id="@+id/three1"
+                android:id="@+id/btn3b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:gravity="center"
-                android:onClick="btnThree1"
+                android:onClick="btn3"
                 android:text="@string/lable_three1"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/two1"
+                android:id="@+id/btn2b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:onClick="btnTwo1"
+                android:onClick="btn2"
                 android:text="@string/lable_two1"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/one1"
+                android:id="@+id/btn1b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="btnOne1"
+                android:onClick="btn1"
                 android:text="@string/lable_one1"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -143,7 +146,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="29dp"
-        android:text="RESET" />
+        android:text="RESET"
+        android:onClick="btnReset"/>
 
 
 </RelativeLayout>
