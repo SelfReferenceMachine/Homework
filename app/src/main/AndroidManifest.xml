@@ -32,7 +32,10 @@
         <activity android:name=".MyListActivity" />
         <activity android:name=".MyList2Activity" />
         <activity android:name=".MyAdapter" />
-        <activity android:name=".RateList2Activity" android:theme="@style/Base.Theme.AppCompat.Light.Dialog"></activity>
+        <activity
+            android:name=".RateList2Activity"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".DBhelper"></activity>
     </application>
 
 </manifest>

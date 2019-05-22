@@ -174,6 +174,18 @@ public class exchange extends AppCompatActivity implements Runnable{
         //打开列表
         Intent list = new Intent(this,MyList2Activity.class);
         startActivity(list);
+        //test database
+            //RateItem item1 = new RateItem("aaaa","123");
+            //RateManager manager = new RateManager(this);
+            //manager.add(item1);
+            //manager.add(new RateItem("bbbb","234"));
+            //Log.i(TAG,"onOptionsItemSelected：写入数据完毕");
+            //查询所有数据
+            //List<RateItem> testList = manager.listAll();
+            //for(RateItem i : testList){
+                //取list中任意元素标号为i
+                //Log.i(TAG,"onOptionsItemSelected：取出数据[id="+i.getId()+"]Name=" + i.getCurName() + "Rate=" + i.getCurRate());
+            //}
         }
         return super.onOptionsItemSelected(item);
     }
@@ -218,8 +230,6 @@ public class exchange extends AppCompatActivity implements Runnable{
             //延缓程序开启时间
 
             Bundle bundle = new Bundle();//save the rate we get
-
-
 
         //获取网络数据(Method 1)
         /*URL url = null;
