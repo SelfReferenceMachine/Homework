@@ -35,7 +35,15 @@
         <activity
             android:name=".RateList2Activity"
             android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
-        <activity android:name=".DBhelper"></activity>
+        <activity android:name=".DBhelper" />
+        <activity android:name=".FrameActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.reader.sns.page.ViewPager"></activity>
     </application>
 
 </manifest>
