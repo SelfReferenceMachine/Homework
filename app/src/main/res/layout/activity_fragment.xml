@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameActivity"
+    android:orientation="vertical"
+    >
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.lofter.nonalaberin_rosettastone.myapplication.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"/>
+        <!--weight值为按键占据主屏幕空间
+    -->
+
+
+    <fragment
+        android:id="@+id/fragment_func"
+        android:name="com.lofter.nonalaberin_rosettastone.myapplication.FuncFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        />
+
+    <fragment
+        android:id="@+id/fragment_setting"
+        android:name="com.lofter.nonalaberin_rosettastone.myapplication.SettingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        />
+
+    <RadioGroup
+        android:id="@+id/buttonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radioHome"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/ic_menu_slideshow"
+            android:text="@string/rdo_home_label"/>
+        <RadioButton
+            android:id="@+id/radioFunc"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/ic_menu_manage"
+            android:text="@string/rdo_func_label"/>
+        <RadioButton
+            android:id="@+id/radioSetting"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/ic_menu_send"
+            android:text="@string/rdo_setting_label"/>
+    </RadioGroup>
+
+</LinearLayout>

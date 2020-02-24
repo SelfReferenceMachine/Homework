@@ -11,7 +11,16 @@
     <string name="lable_three1" translatable="false">+3 POINTS</string>
     <string name="lable_two1" translatable="false">+2 POINTS</string>
     <string name="lable_one1" translatable="false">+1 POINT</string>
-    <string name="rmbInput">PLEASE TYPE RMB</string>
-
-
+    <string name="rmbInput">Please input RMB</string>
+    <string name="btn_dollar_label" translatable="false">DOLLAR</string>
+    <string name="btn_euro_label" translatable="false">EURO</string>
+    <string name="btn_yen_label" translatable="false">YEN</string>
+    <string name="btn_user_define" translatable="false">User Define</string>
+    <string name="btn_save_label" translatable="false">SAVE</string>
+    <string name="menu_set_label" translatable="false">Settings</string>
+    <string name="menu_set_label2" translatable="false">Score</string>
+    <string name="label_open_list" translatable="false">OpenList</string>
+    <string name="rdo_home_label" translatable="false">首页</string>
+    <string name="rdo_func_label" translatable="false">功能</string>
+    <string name="rdo_setting_label" translatable="false">设置</string>
 </resources>
